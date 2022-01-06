@@ -22,7 +22,7 @@ This will
 - set necessary environment variables
 - start virtual environment
 - create app
-- run app
+- run app at http://localhost:5000
 
 ---
 
