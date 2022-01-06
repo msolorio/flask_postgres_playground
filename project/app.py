@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_migrate import Migrate
 from .models import db
-# from routes.user_bp import user_bp
+from .controllers.cats_bp import cats_bp
 
 def create_app():
     app = Flask(__name__)
@@ -11,11 +11,11 @@ def create_app():
 
     migrate = Migrate(app, db)
 
-    # app.register_blueprint(user_bp, url_prefix='/users')
+    app.register_blueprint(cats_bp, url_prefix='/cats')
 
     @app.route('/')
     def index():
         return 'hello from index'
-        # return render_template('index.html')
+
 
     return app
