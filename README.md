@@ -8,6 +8,8 @@ A demo implementation of
 
 To be used as a reference for new Flask projects.
 
+---
+
 ### Steps to Run
 
 Create a postgres database
