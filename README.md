@@ -1,4 +1,7 @@
-## Steps to Run
+## Flask Demo
+A demo implementation of Flask, SQLAlchemy, Marshmallow, PostgreSQL, and Flask Migrate. To be used as a reference for new Flask projects.
+
+### Steps to Run
 
 Create a postgres database
 `$ createdb flask_postgres2`
@@ -12,8 +15,9 @@ This will
 - create
 - run the app
 
-Test in browser or HTTP client
+---
 
+### Test in browser or HTTP client
 
 returns all cats<br>
 `GET /cats`
