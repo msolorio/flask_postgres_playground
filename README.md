@@ -15,15 +15,15 @@ This will
 Test in browser or HTTP client
 
 
-returns all cats
+returns all cats<br>
 `GET /cats`
 
-returns a single cat
+returns a single cat<br>
 `GET /cats/<int:cat_id>`
 
-creates a cat
+creates a cat<br>
 `POST /cats { "name": "cat name", "age": 1, "color": "speckled" }`
 
-deletes a cat
+deletes a cat<br>
 `DELETE /cats/<int:cat_id>`
 ```
