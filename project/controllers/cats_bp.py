@@ -23,3 +23,18 @@ def create():
     db.session.commit()
 
     return cat_schema.dump(new_cat)
+
+
+@cats_bp.route('/<int:cat_id>', methods=['GET'])
+def show(cat_id):
+    cat = Cat.query.get_or_404(cat_id)
+    return cat_schema.dump(cat)
+
+
+@cats_bp.route('/<int:cat_id>', methods=['DELETE'])
+def delete(cat_id):
+    cat = Cat.query.get_or_404(cat_id)
+    db.session.delete(cat)
+    db.session.commit()
+
+    return '', 204

@@ -11,15 +11,6 @@ class Cat(db.Model):
     def __repr__(self):
         return f'<Cat {self.name}>'
 
-    # @property
-    # def serialize(self):
-    #     return {
-    #         'id': self.id,
-    #         'name': self.name,
-    #         'city': self.city,
-    #         'state': self.state,
-    #         'address': self.address
-    #     }
 
 class CatSchema(ma.Schema):
     class Meta:
