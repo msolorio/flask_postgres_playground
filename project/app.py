@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_migrate import Migrate
-from .models import db
+from .models import db, ma
 from .controllers.cats_bp import cats_bp
 
 def create_app():
@@ -8,6 +8,7 @@ def create_app():
     app.config.from_object('project.config')
 
     db.init_app(app)
+    ma.init_app(app)
 
     migrate = Migrate(app, db)
 
