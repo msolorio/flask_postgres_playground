@@ -12,7 +12,10 @@ def index():
 
 @cats_bp.route('/', methods=['POST'])
 def create():
-    # TODO: validate request body data
+    required_props = ('name', 'age', 'color')
+    for prop in required_props:
+        if not request.json.get(prop):
+            return f'{prop} is a required field.', 404
 
     new_cat = Cat(
         name=request.json.get('name'),
