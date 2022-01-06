@@ -1,5 +1,12 @@
 ## Flask Demo
-A demo implementation of Flask, SQLAlchemy, Marshmallow, PostgreSQL, and Flask Migrate. To be used as a reference for new Flask projects.
+A demo implementation of
+- Flask
+- SQLAlchemy
+- Marshmallow
+- PostgreSQL
+- Flask Migrate
+
+To be used as a reference for new Flask projects.
 
 ### Steps to Run
 
