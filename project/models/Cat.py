@@ -1,4 +1,4 @@
-from .db import db, ma
+from .model_config import db, ma
 
 class Cat(db.Model):
     __tablename__ = 'cats'
