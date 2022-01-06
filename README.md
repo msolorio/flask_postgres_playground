@@ -10,10 +10,10 @@ Run the Bootsrap
 `$ ./bootstrap.sh`
 
 This will
-- set the necessary environment variables
-- start the virtual environment
-- create
-- run the app
+- set necessary environment variables
+- start virtual environment
+- create app
+- run app
 
 ---
 
